@@ -888,147 +888,121 @@ footer strong { color: white; }
   opacity: 1;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .site-header { padding: 0 20px; }
+  .nav-links { display: none; }
+  .products { padding: 70px 20px; }
+  .faq { padding: 70px 20px; }
+  .about-section { padding: 70px 20px; }
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .site-header {
-    height: 86px;
     padding: 10px 18px;
-    background: #fff;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .brand-text p {
-    display: none;
-  }
-
-  .logo {
-    width: 58px;
-    height: 58px;
-  }
-
-  .menu-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    cursor: pointer;
-  }
-
-  .menu-btn span {
-    width: 34px;
-    height: 4px;
-    background: #111827;
-    border-radius: 5px;
-  }
-
-  .mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -82%;
-    width: 82%;
-    height: 100vh;
-    background: #fff;
-    z-index: 3000;
-    transition: 0.35s;
-    box-shadow: -6px 0 25px rgba(0,0,0,0.2);
-  }
-
-  .mobile-menu.active {
-    right: 0;
-  }
-
-  .mobile-menu-header {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 22px;
-    border-bottom: 1px solid #ddd;
-    font-size: 24px;
-  }
-
-  .close-menu {
-    color: #e63946;
-    font-size: 34px;
-    cursor: pointer;
-  }
-
-  .mobile-menu a {
-    display: block;
-    padding: 22px 28px;
-    border-bottom: 1px solid #ddd;
-    text-decoration: none;
-    color: #111;
-    font-size: 22px;
+    height: 88px;
   }
 
   .hero {
-    margin-top: 86px;
-    height: calc(100vh - 86px);
+    width: 100%;
+    height: 75vh;
+    min-height: 620px;
+    overflow: hidden;
+  }
+
+  .slide {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   .hero-content {
-    padding-top: 90px;
+    width: 100%;
+    padding: 0 24px;
   }
-}@media (max-width: 768px) {
 
-  .site-header {
+  .hero-title {
+    font-size: 58px;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .hero-cta {
+    padding: 13px 28px;
+    font-size: 15px;
+  }
+
+  .slider-arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .slider-prev {
+    right: 18px;
+  }
+
+  .slider-next {
+    left: 18px;
+  }
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 20px;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2b1e1e;
+  font-weight: 600;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+/* زر الثلاث خطوط */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: #2b1e1e;
+  border-radius: 2px;
+}
+
+/* يظهر بس بالجوال */
+@media (max-width: 768px) {
+  .menu-btn {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    height: 90px;
-    background: #f7f2e8;
-  }
-
-  .brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-
-  .brand-text p {
-    font-size: 10px;
-  }
-
-  .logo {
-    width: 55px;
-    height: 55px;
   }
 
   .nav-links {
     display: none;
   }
-
-  .header-actions {
-    display: flex;
-    gap: 10px;
-  }
-
-  .menu-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-  }
-
-  .menu-btn span {
-    width: 28px;
-    height: 3px;
-    background: #2b1e1e;
-    border-radius: 3px;
-  }
-}
-    .site-header {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 
@@ -1045,18 +1019,12 @@ footer strong { color: white; }
   <span></span>
   <span></span>
 </div>
-
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-menu-header">
-    <span class="close-menu" onclick="toggleMenu()">×</span>
-    <span>القائمة الرئيسية</span>
-  </div>
-
-  <a href="#home">الرئيسية</a>
-  <a href="#products">المنتجات</a>
-  <a href="#faq">الأسئلة الشائعة</a>
-  <a href="#about">من نحن</a>
-</div>
+<ul class="mobile-menu" id="mobileMenu">
+  <li><a href="#home">الرئيسية</a></li>
+  <li><a href="#products">المنتجات</a></li>
+  <li><a href="#about">من نحن</a></li>
+  <li><a href="#faq">الأسئلة</a></li>
+</ul>
 
 <img src="logo.jpg" alt="شعار إرث" class="logo">
 <div class="brand-text">
