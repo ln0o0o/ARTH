@@ -1099,6 +1099,85 @@ img {
     font-size: 34px;
   }
 }
+    .review-card {
+  width: 260px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(12px);
+  padding: 26px 20px;
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(122,46,53,0.12);
+  transition: 0.3s;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}.reviews-track {
+  animation-duration: 35s;
+}.reviews {
+  padding: 90px 0;
+  background: #f7f2e8;
+  overflow: hidden;
+  text-align: center;
+}
+
+.reviews h2 {
+  color: #7a2e35;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  animation: reviewMove 22s linear infinite;
+}
+
+.review-card {
+  width: 270px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  padding: 28px 22px;
+  border-radius: 26px;
+  box-shadow: 0 15px 40px rgba(122,46,53,0.12);
+  color: #7a2e35;
+  font-weight: 700;
+}
+
+.review-card p {
+  color: #5a403f;
+  font-size: 15px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+.review-card span {
+  color: #c9a227;
+}
+
+.reviews-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes reviewMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+.review-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  display: block;
+}.review-img {
+  width: 36px;
+  height: 36px;
+}
     </style>
 </head>
 <body>
@@ -1306,7 +1385,126 @@ img {
     </details>
   </div>
 </section>
+<section class="reviews">
+  <h2>آراء عملائنا</h2>
 
+  <div class="reviews-track">
+
+    <div class="review-card">
+      <img src="avatar.png" class="review-img">
+      <h3>سارة محمد ****</h3>
+      <p>التغليف فخم جدًا 👌</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>نورة ب***</h3>
+      <p>أفضل هدية طلبتها 😍</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>ليان الس****</h3>
+      <p>افضل متجر بالعالم استمروا</p>
+      <span>★★★★☆</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>رهف خالد****</h3>
+      <p>يارب الاستاذة تعطيكم كامل وزياده بونس 👍</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>جود عبدالله***</h3>
+      <p>لما شربت اول مره بالكوب حسيت بطعم التراث ابدااع</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>شهد ال****</h3>
+      <p>أحببت التفاصيل مره متقنه</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>دانة سالم ال***</h3>
+      <p>شكل المنتج فخم</p>
+      <span>★★★★☆</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>لمى م*****</h3>
+      <p>تجربة جميلة جدًا وبكررها ان شاء الله</p>
+      <span>★★★★★</span>
+    </div>
+
+    <!-- تكرار (مهم عشان الحركة تكون لا نهائية) -->
+
+    <div class="review-card">
+      <img src="avatar.png" class="review-img">
+      <h3>سارة محمد ****</h3>
+      <p>التغليف فخم جدًا 👌</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>نورة ب***</h3>
+      <p>أفضل هدية طلبتها 😍</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+         <img src="avatar.png" class="review-img">
+      <h3>ليان الس****</h3>
+      <p>افضل متجر بالعالم استمروا</p>
+      <span>★★★★☆</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>رهف خالد****</h3>
+      <p>يارب الاستاذة تعطيكم كامل وزياده بونس 👍</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>جود عبدالله***</h3>
+      <p>لما شربت اول مره بالكوب حسيت بطعم التراث ابدااع</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+            <img src="avatar.png" class="review-img">
+      <h3>شهد ال****</h3>
+      <p>أحببت التفاصيل مره متقنه</p>
+      <span>★★★★★</span>
+    </div>
+
+    <div class="review-card">
+             <img src="avatar.png" class="review-img">
+      <h3>دانة سالم ال***</h3>
+      <p>شكل المنتج فخم</p>
+      <span>★★★★☆</span>
+    </div>
+
+    <div class="review-card">
+              <img src="avatar.png" class="review-img">
+      <h3>لمى م*****</h3>
+      <p>تجربة جميلة جدًا وبكررها ان شاء الله</p>
+      <span>★★★★★</span>
+    </div>
+  </div>
+</section>
 <!-- ABOUT -->
 
 <section class="about-section" id="about">
