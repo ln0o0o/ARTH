@@ -1004,6 +1004,101 @@ footer strong { color: white; }
     display: none;
   }
 }
+    /* ===== RESPONSIVE BASE ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== MOBILE PROFESSIONAL ===== */
+@media (max-width: 768px) {
+
+  .site-header {
+    height: 72px;
+    padding: 8px 16px;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-text h1 {
+    font-size: 21px;
+  }
+
+  .brand-text p {
+    font-size: 9px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    height: 88vh;
+    min-height: 560px;
+    padding-top: 72px;
+  }
+
+  .hero-content {
+    padding: 0 22px;
+  }
+
+  .hero-badge {
+    font-size: 11px;
+    padding: 6px 16px;
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  .hero-cta {
+    padding: 12px 26px;
+    font-size: 14px;
+  }
+
+  .products,
+  .faq,
+  .about-section {
+    padding: 65px 18px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card-img-wrap {
+    height: 240px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+}
     </style>
 </head>
 <body>
