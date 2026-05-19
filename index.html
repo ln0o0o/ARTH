@@ -1004,3 +1004,386 @@ footer strong { color: white; }
     display: none;
   }
 }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header class="site-header" id="siteHeader">
+
+<img src="logo.jpg" alt="شعار إرث" class="logo">
+<div class="brand-text">
+  <h1>إرث</h1>
+  <p>متجر مستوحى من التراث السعودي</p>
+</div>
+
+
+  </a>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#products">المنتجات</a></li>
+      <li><a href="#faq">الأسئلة</a></li>
+      <li><a href="#about">من نحن</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions">
+    <a href="cart.html" class="cart-link">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span id="cart-count">0</span>
+    </a>
+  </div>
+</header>
+
+<!-- HERO SLIDER -->
+
+<section class="hero" id="home">
+
+  <!-- الشرائح -->
+
+  <div class="slides-container">
+
+```
+<div class="slide active" style="background-image: url('heritage.jpg')">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">✦ هوية تراثية سعودية ✦</span>
+    <h2 class="hero-title">صُـــنِعَ<br>فــي السعوديــة</h2>
+    <p class="hero-subtitle">Made in Saudi Arabia</p>
+    <p class="hero-desc">في إرث نقدم منتجات مستوحاة من الثقافة السعودية بتصميم أنيق يعكس الأصالة.</p>
+    <a href="#products" class="hero-cta">تصفح المنتجات <i class="fa-solid fa-arrow-left"></i></a>
+  </div>
+</div>
+
+<div class="slide" style="background-image: url('fakhar.JPG')">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">✦ صناعة يدوية أصيلة ✦</span>
+    <h2 class="hero-title">من الطـيــن<br>إلى الفــن</h2>
+    <p class="hero-subtitle">Handcrafted Heritage</p>
+    <p class="hero-desc">كل قطعة تُصنع بيد حِرفية تعشق التراث وتُتقن التفاصيل.</p>
+    <a href="#products" class="hero-cta">اكتشف المنتجات <i class="fa-solid fa-arrow-left"></i></a>
+  </div>
+</div>
+
+<div class="slide" style="background-image: url('nakhl.JPG')">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">✦ حِرفة وإتقان ✦</span>
+    <h2 class="hero-title">الجمال<br>في التفاصيل</h2>
+    <p class="hero-subtitle">Crafted with Passion</p>
+    <p class="hero-desc">نؤمن أن الأصالة تبدأ من الشغف بالصنعة والحرص على الجودة.</p>
+    <a href="#products" class="hero-cta">تسوّق الآن <i class="fa-solid fa-arrow-left"></i></a>
+  </div>
+</div>
+```
+
+  </div>
+
+  <!-- نقاط التنقل -->
+
+  <div class="slider-dots">
+    <span class="dot active" onclick="(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+
+  <!-- أسهم -->
+
+  <button class="slider-arrow slider-prev" onclick="changeSlide(-1)">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+  <button class="slider-arrow slider-next" onclick="changeSlide(1)">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <div class="hero-scroll">
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+  <div class="section-header">
+    <span class="section-label">مجموعتنا</span>
+    <h2 class="section-title">منتجاتنا</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="products-grid">
+
+<div class="card" id="rahal">
+  <div class="card-img-wrap">
+    <img src="cop.JPG" alt="رحال">
+    <span class="card-badge">الأكثر مبيعاً</span>
+  </div>
+  <div class="card-body">
+    <h3>رحال</h3>
+    <p>كوب فخاري مستوحى من روح الترحال والتراث، منقوش بمعالم سعودية أصيلة.</p>
+    <div class="card-footer">
+      <div class="card-price">180<span>ريال</span></div>
+      <button class="add-btn" onclick="addToCart('رحال', 180, 'cop.JPG', this)">
+        <i class="fa-solid fa-plus"></i> أضف للسلة
+      </button>
+    </div>
+  </div>
+</div>
+<div class="card" id="TEB">
+  <div class="card-img-wrap">
+    <img src="TEB.jpg" alt="طِيب">
+  </div>
+  <div class="card-body">
+    <h3>طِيب</h3>
+    <p>مبخرة خزفية مستوحاه من التراث السعودي</p>
+    <div class="card-footer">
+      <div class="card-price">120<span>ريال</span></div>
+      <button class="add-btn" onclick="addToCart('طِيب', 120, 'TEB.jpg', this)">
+        <i class="fa-solid fa-plus"></i> أضف للسلة
+      </button>
+    </div>
+  </div>
+</div>
+<div class="card" id="nuzul">
+  <div class="card-img-wrap">
+    <img src="gift.jpg" alt="نُزل">
+    <span class="card-badge">هدية مميزة</span>
+  </div>
+  <div class="card-body">
+    <h3>نُزل</h3>
+    <p>صندوق هدايا مستوحى من كرم الضيافة السعودية، يجمع بين البساطة والفخامة.</p>
+    <div class="card-footer">
+      <div class="card-price">220<span>ريال</span></div>
+      <button class="add-btn" onclick="addToCart('نُزل', 220, 'gift.jpg', this)">
+        <i class="fa-solid fa-plus"></i> أضف للسلة
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="fay">
+  <div class="card-img-wrap">
+    <img src="asis.JPG" alt="فيء">
+  </div>
+  <div class="card-body">
+    <h3>فيء</h3>
+    <p>أواني فخارية مزيّنة بالجمل، تضيف لمسة تراثية دافئة لأي مساحة.</p>
+    <div class="card-footer">
+      <div class="card-price">150<span>ريال</span></div>
+      <button class="add-btn" onclick="addToCart('فيء', 150, 'asis.JPG', this)">
+        <i class="fa-solid fa-plus"></i> أضف للسلة
+      </button>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+  <div class="section-header">
+    <span class="section-label">استفساراتك</span>
+    <h2 class="section-title">أسئلة عالبال</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="faq-list">
+    <details>
+      <summary>هل يمكنني طلب منتج مخصص؟</summary>
+      <p>نعم، يمكن طلب بعض المنتجات بتصميم خاص حسب المتوفر.</p>
+    </details>
+    <details>
+      <summary>متى يصل الطلب؟</summary>
+      <p>عادة يصل الطلب خلال 3 إلى 5 أيام عمل.</p>
+    </details>
+    <details>
+      <summary>هل المنتجات مناسبة للهدايا؟</summary>
+      <p>نعم، منتجات إرث مناسبة للهدايا وتعكس الطابع السعودي الأصيل.</p>
+    </details>
+    <details>
+      <summary>كيف أتواصل مع المتجر؟</summary>
+      <p>يمكنك التواصل معنا من خلال قسم تواصل معنا في أسفل الصفحة.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-logo-wrap">
+      <img src="logo.jpg" alt="شعار إرث">
+    </div>
+
+```
+<h2 class="brand-name">إرث</h2>
+<p class="about-description">
+  إرث متجر سعودي مستوحى من التراث والأصالة،
+  نقدم منتجات تعكس الهوية السعودية بلمسة عصرية وحديثة
+  للمناسبات والهدايا.
+</p>
+
+<div class="social-icons">
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+
+<div class="divider"></div>
+
+<h3 class="links-title">روابط مهمة</h3>
+<div class="important-links">
+  <a href="#products">المنتجات</a>
+  <a href="#faq">الأسئلة الشائعة</a>
+  <a href="#about">من نحن</a>
+  <a href="#home">الرئيسية</a>
+</div>
+
+<div class="divider"></div>
+
+<div class="contact-info">
+  <h3>تواصل معنا</h3>
+  <p>📞 +966500000000</p>
+  <p>✉️ erthstore@gmail.com</p>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <p>© 2026 جميع الحقوق محفوظة — <strong>متجر إرث</strong></p>
+</footer>
+
+<!-- CHAT BOT -->
+
+<button class="chat-btn" onclick="toggleChat()">🤖</button>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">
+    <span>🤖</span> مساعد إرث الذكي
+  </div>
+  <div class="chat-body">
+    <p class="bot-msg">مرحبًا 👋 أنا مساعد إرث</p>
+    <p class="bot-msg">كيف أقدر أساعدك؟</p>
+    <div class="chat-options">
+      <button onclick="showReply('products')">🛍 عرض المنتجات</button>
+      <button onclick="showReply('gift')">🎁 اقتراح هدية</button>
+      <button onclick="showReply('contact')">📞 التواصل معنا</button>
+    </div>
+    <div id="reply"></div>
+  </div>
+</div>
+
+<!-- TOAST -->
+
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toast-msg">تمت الإضافة للسلة</span>
+</div>
+
+<script>
+  // ===== SLIDER =====
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots   = document.querySelectorAll('.dot');
+
+  const sliderContainer = document.querySelector('.slides-container');
+
+function goToSlide(n) {
+  currentSlide = (n + slides.length) % slides.length;
+  sliderContainer.style.transform = `translateX(${currentSlide * 100}%)`;
+  dots.forEach(d => d.classList.remove('active'));
+  dots[currentSlide].classList.add('active');
+}
+
+function changeSlide(dir) {
+  goToSlide(currentSlide + dir);
+}
+
+</script>
+
+<script>
+  // Header scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('siteHeader').classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  // Cart
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  document.getElementById('cart-count').textContent = cart.length;
+
+  function addToCart(name, price, image, btn) {
+    cart.push({ name, price, image, qty: 1 });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart-count').textContent = cart.length;
+
+    // Button feedback
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> تمت الإضافة';
+    btn.classList.add('added');
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = orig;
+      btn.classList.remove('added');
+      btn.disabled = false;
+    }, 2000);
+
+    // Toast
+    showToast('تمت إضافة ' + name + ' للسلة ✓');
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    document.getElementById('toast-msg').textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  // Chat
+  function toggleChat() {
+    const box = document.getElementById('chatBox');
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function showReply(type) {
+    const reply = document.getElementById('reply');
+    reply.style.display = 'block';
+
+    // إزالة أي تمييز سابق
+    document.querySelectorAll('.card.highlighted').forEach(c => c.classList.remove('highlighted'));
+
+    if (type === 'products') {
+      reply.innerHTML = 'لدينا: <a href="#rahal" onclick="highlightCard(\'rahal\')">رحال</a> ، <a href="#fay" onclick="highlightCard(\'fay\')">فيء</a> ، <a href="#nuzul" onclick="highlightCard(\'nuzul\')">نُزل</a>، <a href="#TEB" onclick="highlightCard(\'TEB\')">طِيب</a> ✨';
+    } else if (type === 'gift') {
+      reply.innerHTML = 'أنصحك بـ <a href="#nuzul" onclick="highlightCard(\'nuzul\')">نُزل</a> — مناسب جداً للهدايا 🎁';
+      setTimeout(() => highlightCard('nuzul'), 300);
+    } else if (type === 'contact') {
+      reply.innerHTML = 'تواصل معنا عبر <a href="#about">قسم التواصل</a> 📞';
+    }
+  }
+
+  function highlightCard(id) {
+    // إزالة أي تمييز سابق
+    document.querySelectorAll('.card.highlighted').forEach(c => c.classList.remove('highlighted'));
+    const card = document.getElementById(id);
+    if (!card) return;
+    card.classList.add('highlighted');
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // يزيل التمييز بعد 5 ثواني
+    setTimeout(() => card.classList.remove('highlighted'), 5000);
+  }
+  function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
+
